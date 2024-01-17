@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+:root{
+    --primary-color-100: #7401b8;
+    --primary-color-200: #f2f1f9;
+    --primary-color-300: #181818;
+    --primary-color-400: #1e1d1f;
+    --secondary-color-100: #403f40;
+    --secondary-color-200: #8f8f8f;
+    --secondary-color-300: #cf008a;
+    --secondary-color-400: #14b9be;
+    --secondary-color-400: #f9f7fa;
+}
+a, button{
+    cursor: pointer;
+}
+
+header{
+    /* background-color: rgba(255,255,255,0.9); */
+    color: #fff;
+}
+
+footer{
+    background-color: var(--primary-color-200);
+}
+
+.ornament{
+    background: url("../img/patterns/pattern2.png") 0 0;
+    background-size: contain;
+}
+.swiper-slide:nth-child(n + 2){
+    box-shadow: 2px 2px 4.2px 0px rgba(0,0,0,0.25);
+    background-color: #fff;
+}
+.swiper-background{
+    background-color: var(--primary-color-200);
+}
+
+strong{
+    color: var(--primary-color-100);
+}
+
+.depth2 li {
+    border-bottom: 1px solid var(--primary-color-200);
+}
+.depth2 li:last-child{
+    border-bottom: none;
+}
+
+.text-box button{
+    border: 1px solid var(--primary-color-100);
+    background-color: #fff;
+    color: var(--primary-color-100);
+    box-shadow: 4px 4px 0px 0px rgba(161,1,184,0.7);
+}
+
+.text-box button:hover{
+    border: 1px solid var(--primary-color-100);
+    background-color: var(--primary-color-100);
+    color: #fff;
+}
+
+aside img{
+    box-shadow: 0px 2px 4.2px 0px rgba(0,0,0,0.25);
+}
+
+.slider-ctrl button{
+    border: 1px solid var(--primary-color-400);
+    background-color: white;
+}
+
+.slider-background{
+    background-color: var(--primary-color-200);
+}
+.desc{
+    background-color: #fff;
+}
+
+.next:hover{
+    background-color: var(--primary-color-200);
+}
+.prev:hover{
+    background-color: var(--primary-color-200);
+}
+
+.btn-save{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.other-video img:first-child{
+    border: 3px solid var(--primary-color-100);
+}
+.other-video img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+    nav{
+        border: 1px solid var(--secondary-color-200);
+        border-radius: 8px;
+    }
+    .search-btn, .menu-btn{
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .search-btn{
+        border-top: var(--primary-color-200);
+        border-left: var(--primary-color-200);
+        border-bottom: var(--primary-color-200);
+    }
+    .menu-btn{
+        border-top: var(--primary-color-200);
+        border-right: var(--primary-color-200);
+        border-bottom: var(--primary-color-200);
+    }
+    .search-btn:hover, .menu-btn:hover{
+        color: var(--primary-color-100);
+    }
+}

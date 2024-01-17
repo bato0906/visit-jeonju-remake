@@ -1,0 +1,557 @@
+@charset "utf-8";
+
+/* 데스크탑 버전 800px 이상 */
+@media (min-width: 800px) {
+    :root {
+        --width: 65.3125%;
+    }
+    /***********/
+    /* HEADER */
+    /***********/
+    nav {
+        display: none;
+    }
+    header {
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* height: 400px; */
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--width);
+        height: 128px;
+    }
+    .logo img {
+        width: 120px;
+    }
+
+    /* 네비게이션 */
+    .depth1 {
+        position: relative;
+        display: flex;
+    }
+    .depth1 > li > a {
+        display: inline-block;
+        padding: 45px 0;
+        width: 176px;
+    }
+    .depth2 {
+        position: absolute;
+        top: 120px;
+    }
+    .depth2 > li {
+        width: 176px;
+        padding: 16px 0;
+    }
+
+    .side-menu,
+    .lang,
+    .savesearch {
+        display: flex;
+        align-items: center;
+    }
+    .side-menu {
+        gap: 16px;
+    }
+    .lang {
+        gap: 8px;
+    }
+    .savesearch {
+        gap: 16px;
+    }
+
+    /********/
+    /* MAIN */
+    /********/
+    main {
+        margin: 0 auto;
+        width: 65.3125%;
+    }
+    .main-visual {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-visual video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ornament {
+        width: 100%;
+        height: 53px;
+        margin: 0 0 96px 0;
+    }
+
+    section {
+        margin: 0 auto 128px;
+    }
+
+    /* slider */
+    .now-in-jeonju {
+        position: relative;
+        margin-bottom: 224px; /*128px + 96px*/
+    }
+    .swiper {
+        position: relative;
+        left: -333px;
+        top: 0;
+        width: 1920px;
+    }
+    .swiper-wrapper {
+        min-height: 490px;
+    }
+    .swiper-background {
+        position: absolute;
+        top: 350px;
+        left: 0px;
+        width: 800px;
+        height: 300px;
+    }
+    .swiper-slide {
+        overflow: hidden;
+        min-width: 407px;
+        min-height: 485px;
+        border-radius: 8px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slide-img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .swiper-slide .desc {
+        height: 100px;
+        padding: 16px;
+        word-break: keep-all;
+        text-overflow: ellipsis;
+    }
+    .swiper-slide h3 {
+        margin: 8px 0;
+    }
+
+    .slider-ctrl {
+        display: flex;
+        gap: 8px;
+    }
+    .slider-ctrl img {
+        width: 10px;
+    }
+    .slider-ctrl button {
+        position: relative;
+        top: -24px;
+        left: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    .btn-save {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 0 0 0 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .btn-save img {
+        width: 20px;
+        object-fit: contain;
+    }
+
+    /* 어사이드 */
+    aside {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 1000;
+    }
+
+    /* 아티클 */
+    article {
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-box,
+    .text-box {
+        width: 45%;
+        border-radius: 8px;
+    }
+    .img-box {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .img-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-box {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .text-box p {
+        margin: 32px 0;
+    }
+    .text-box button {
+        padding: 8px 24px;
+        border-radius: 8px;
+    }
+    .introduce {
+        display: flex;
+        flex-direction: column;
+        gap: 128px;
+    }
+    .introduce article {
+        height: 492px;
+    }
+    .introduce article:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    /* 비디오 */
+    .videos iframe {
+        width: 100%;
+        height: 705px;
+        border-radius: 8px;
+        margin: 16px 0;
+    }
+    .other-video {
+        display: flex;
+        justify-content: space-between;
+    }
+    .other-video img {
+        width: 32%;
+        border-radius: 8px;
+    }
+
+    /**********/
+    /* footer */
+    /**********/
+    footer,
+    .footer-content,
+    .sns {
+        display: flex;
+    }
+    footer {
+        justify-content: center;
+        height: 207px;
+        padding: 36px 0 0 0;
+    }
+    footer img {
+        height: 32px;
+    }
+    .footer-content {
+        width: var(--width);
+        gap: 120px;
+    }
+    .saved-items img {
+        height: 16px;
+    }
+    .sns {
+        gap: 16px;
+    }
+    .sns-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .terms li {
+        margin: 0 0 16px 0;
+    }
+
+    /* 어사이드 */
+    aside img {
+        border-radius: 50%;
+    }
+
+    /* 유틸리티 */
+    .zoom:hover {
+        transition: 0.5s ease-in-out;
+        transform: scale(1.1);
+    }
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 1000;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: fit-content;
+        display: flex;
+    }
+    .search-btn,
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+    }
+    .search-btn {
+        border-radius: 8px 0 0 8px;
+    }
+    .menu-btn {
+        border-radius: 0 8px 8px 0;
+    }
+
+    header {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* height: 400px; */
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 32px);
+        height: 67.38px;
+    }
+    .logo img {
+        width: 97px;
+    }
+    .depth1 {
+        display: none;
+    }
+    .side-menu img {
+        width: 24px;
+    }
+    .side-menu,
+    .lang,
+    .savesearch {
+        display: flex;
+        align-items: center;
+    }
+    .lang {
+        gap: 8px;
+    }
+    .savesearch {
+        display: none;
+    }
+
+    main {
+        margin: 0 auto;
+        width: calc(100% - 32px);
+    }
+    .main-visual {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-visual video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ornament {
+        width: 100%;
+        height: 53px;
+        margin: 0 0 96px 0;
+    }
+    
+    section {
+        margin: 0 auto 128px;
+    }
+    /* slider */
+    .now-in-jeonju {
+        position: relative;
+        margin-bottom: 224px; /*128px + 96px*/
+    }
+
+    .swiper {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 1920px;
+    }
+    .swiper-wrapper .swiper-slide:first-child{
+        display: none;
+    } 
+    .swiper-wrapper {
+        min-height: 490px;
+    }
+    .swiper-background {
+        position: absolute;
+        top: 350px;
+        left: 0px;
+        width: 800px;
+        height: 300px;
+    }
+    .swiper-slide {
+        overflow: hidden;
+        min-width: 360px;
+        min-height: 485px;
+        border-radius: 8px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slide-img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .swiper-slide .desc {
+        height: 100px;
+        padding: 16px;
+        word-break: keep-all;
+        text-overflow: ellipsis;
+    }
+    .swiper-slide h3 {
+        margin: 8px 0;
+    }
+
+    .slider-ctrl {
+        display: flex;
+        gap: 8px;
+    }
+    .slider-ctrl img {
+        width: 10px;
+    }
+    .slider-ctrl button {
+        position: relative;
+        top: 0px;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .btn-save {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 0 0 0 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .btn-save img {
+        width: 20px;
+        object-fit: contain;
+    }
+    aside{
+        display: none;
+    }
+
+    /* 아티클 */
+    .img-box,
+    .text-box {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .img-box {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .img-box > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .text-box {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .text-box p {
+        margin: 32px 0;
+    }
+    .text-box button {
+        padding: 8px 24px;
+        border-radius: 8px;
+    }
+    .introduce {
+        display: flex;
+        flex-direction: column;
+        gap: 128px;
+    }
+
+
+
+    .videos iframe {
+        width: 100%;
+        height: fit-content;
+        border-radius: 8px;
+        margin: 16px 0;
+    }
+    .other-video{
+        width: 96%;
+        display: flex;
+    }
+
+    .other-video img{
+        width: 33%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+/* footer */
+
+    footer {
+        height: fit-content;
+        padding: 36px 16px;
+    }
+
+    .saved-items img {
+        height: 16px;
+    }
+    .sns {
+        gap: 16px;
+    }
+    .sns img{
+        height: 24px;
+    }
+    .sns-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+        
+}
